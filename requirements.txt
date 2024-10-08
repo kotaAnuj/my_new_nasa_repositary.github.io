@@ -1,0 +1,22 @@
+plotly
+matplotlib
+seaborn
+scikit-learn
+google-generativeai  
+scipy
+streamlit
+pandas
+numpy
+umap-learn
+requests
+sqlite3
+numpy
+speechrecognition
+gTTS
+playsound
+requests
+seaborn
+scikit-learn
+scipy
+umap-learn
+dataclasses; python_version<"3.7"
