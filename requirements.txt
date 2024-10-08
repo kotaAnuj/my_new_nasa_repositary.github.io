@@ -1,3 +1,4 @@
+--upgrade pip
 plotly
 matplotlib
 seaborn
@@ -18,4 +19,4 @@ seaborn
 scikit-learn
 scipy
 umap-learn
-dataclasses; python_version<"3.7"
+
