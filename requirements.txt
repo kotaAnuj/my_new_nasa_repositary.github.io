@@ -1,21 +1,16 @@
-
+streamlit
 plotly
 matplotlib
 seaborn
 scikit-learn
 google-generativeai  
 scipy
-streamlit
 pandas
 numpy
 umap-learn
 requests
-speechrecognition
-gTTS
-playsound
 requests
 seaborn
 scikit-learn
 scipy
-umap-learn
 
