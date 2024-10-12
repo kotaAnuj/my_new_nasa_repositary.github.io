@@ -1,0 +1,35 @@
+name: Deploy Streamlit App to Firebase
+
+on:
+  push:
+    branches: [main]  # Replace with your desired branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Build Streamlit app
+        run: streamlit run kproject.py --static --target-dir dist
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Install Firebase Admin SDK
+        run: pip install firebase-admin
+      - name: Set up Firebase service account (required for deploy)
+        uses: actions/download-artifact@v3
+        with:
+          name: firebase-service-account
+          path: ${{ runner.workspace }}/firebase-service-account.json
+      - name: Deploy to Firebase with Firebase CLI
+        uses: google/cloud-actions@v3
+        with:
+          gcloud_service_account: ${{ secrets.FIREBASE_TOKEN_FILE_PATH }}  # Adjust path
+          gcloud_scopes: |-
+            https://www.googleapis.com/auth/cloud-platform
+            https://www.googleapis.com/auth/cloud-source-registry
+            https://www.googleapis.com/auth/cloudbuild
+            https://www.googleapis.com/auth/sourcerepo.reader
+            https://www.googleapis.com/auth/firebase.hosting
+          commands:   
+            firebase deploy --project nasa-9f43b
+            --only hosting
