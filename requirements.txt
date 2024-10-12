@@ -1,4 +1,4 @@
-python -m pip install --upgrade pip
+
 plotly
 matplotlib
 seaborn
@@ -10,7 +10,6 @@ pandas
 numpy
 umap-learn
 requests
-sqlite3
 speechrecognition
 gTTS
 playsound
