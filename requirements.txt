@@ -13,7 +13,4 @@ requests
 seaborn
 scikit-learn
 scipy
-speechrecognition
-gtts
-playsound
 
