@@ -16,4 +16,5 @@ scipy
 playaudio
 SpeechRecognition
 gTTS
+wheel
 playsound
