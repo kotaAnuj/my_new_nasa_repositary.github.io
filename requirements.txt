@@ -16,3 +16,4 @@ scipy
 playaudio
 SpeechRecognition
 gTTS
+playsound
