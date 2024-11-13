@@ -13,4 +13,4 @@ requests
 seaborn
 scikit-learn
 scipy
-
+playaudio
