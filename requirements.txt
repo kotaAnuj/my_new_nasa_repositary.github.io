@@ -13,8 +13,3 @@ requests
 seaborn
 scikit-learn
 scipy
-playaudio
-SpeechRecognition
-gTTS
-wheel
-playsound
