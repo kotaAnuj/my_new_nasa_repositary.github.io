@@ -8,7 +8,7 @@ from google.generativeai import GenerativeModel, configure
 import requests
 
 # Replace with your API key
-GOOGLE_API_KEY = "AIzaSyA5HtRnzGruiia-aKtMMLnBjJ0ovTh11nE"
+GOOGLE_API_KEY = "AIzaSyDpaOZq0jE6d4SdTpf1GyNk_lLkB75Kn_8"
 
 class Tools:
     def __init__(self):
