@@ -13,7 +13,7 @@ import timeit
 from google.generativeai import GenerativeModel, configure
 
 # Replace with your API key
-GOOGLE_API_KEY = "AIzaSyA5HtRnzGruiia-aKtMMLnBjJ0ovTh11nE"
+GOOGLE_API_KEY = "AAIzaSyDpaOZq0jE6d4SdTpf1GyNk_lLkB75Kn_8"
 
 class Tools:
     def __init__(self):
